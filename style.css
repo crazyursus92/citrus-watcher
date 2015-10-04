@@ -1,0 +1,59 @@
+.watcher-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+.watcher-container.active{
+    width: 30%;
+    height: 100%;
+}
+
+.watcher-container .watcher-burger-menu{
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+}
+.watcher-container .watcher-burger-menu:after{
+    position: absolute;
+    content: "◄";
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.watcher-container.active .watcher-burger-menu:after{
+    content: "►";
+}
+.watcher-container .watcher-container-border{
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 10px;
+    height: 100%;
+    cursor: col-resize;
+}
+.watcher-container ul{
+    height: 100%;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-left: 1px solid #DDD6D6;
+}
+
+.watcher-container li{
+    padding-left: 10px;
+    line-height: 30px;
+    border: solid #DDD6D6;
+    border-width: 1px 0 1px 0;
+}
+
+.watcher-container .watcher-item-name{
+    color: #578031;
+}
